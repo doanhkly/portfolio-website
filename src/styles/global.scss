@@ -1,0 +1,17 @@
+/* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Arvo', sans-serif;
+    background-color: #081a24;
+    color: white;
+    opacity: 0.9;
+    height: 100%;
+
+    body {
+        min-height: 100%;
+        margin: 0;
+        width: 100%;
+        line-height: 1.5;
+    }
+}

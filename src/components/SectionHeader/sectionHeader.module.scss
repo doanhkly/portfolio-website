@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+
+    h1::before {
+        counter-increment: item;
+        content: "0" counter(item) ".";
+        margin-right: 10px;
+        color: #8bd3f7;
+        text-align: left;
+    }
+
+    h1::after {
+        content: "";
+        opacity: 0.6;
+        height: 1px;
+        width: 300px;
+        background-color: white;
+        display: inline-block;
+        margin: 5px 15px;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    .header h1::after {
+        display: none;
+    }
+}

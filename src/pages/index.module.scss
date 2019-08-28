@@ -1,0 +1,47 @@
+.main {
+    width: 100%;
+    counter-reset: item 1;
+    margin: 0 auto;
+    padding: 9.5rem 8rem 0;
+    box-sizing: border-box;  
+
+    section {
+        padding: 150px 0px;
+    }
+
+    section:first-child {
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width: 48em) {
+    .main {
+        padding: 10rem 3rem 3rem;
+    }
+}
+
+/*
+.content {
+    margin: 5rem auto;
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 48em) {
+    .container {
+        padding: 0 2.5rem;
+    }
+}
+
+.headerContainer {
+    padding: 0 40px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    align-items: center;
+    z-index: 11;
+}*/
