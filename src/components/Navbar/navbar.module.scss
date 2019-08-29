@@ -14,7 +14,7 @@
     counter-reset: section;
     justify-content: space-between;
     align-items: center;
-    display: flex;
+    display: inline-block;
     width: 100%; 
     margin: 1rem 0 0;
 }
@@ -48,22 +48,57 @@
 }
 
 .logo {
-    color: white;
+    //display: inline-block;
+    float: right;
     font-size: 120%;
     text-decoration: none;
     border: thick double #8bd3f7;
     border-radius: 50%;
-    
+    width: 50px;
+
     h3 {
         margin: 10px;
     }
+
+    * {
+        color: white;
+        text-decoration: none;
+    }
 }
+
+.menuBtn {
+    display: none;
+    font-size: 40px;
+}
+
+.menu {
+    //float: left;
+}   
 
 @media only screen and (max-width: 48em) {
     .list {
+        display: none;
         li {
-            display: none;
+            display: block;
+            padding: 10px;
         }
+    }
+
+    .header {
+        padding: 0 2rem 0.5rem;
+    }
+
+    .menuBtn {
+        display: inline-block;
+        padding: 5px;
         
+        svg:hover {
+            color: #8bd3f7;
+            cursor: pointer;
+        }
+    }
+
+    input:checked ~ ul {
+        display: block;
     }
 }

@@ -1,8 +1,20 @@
 import React from 'react'
-
+import { useStaticQuery, graphql } from 'gatsby'
 import styles from './hero.module.scss'
 
-function Hero() {
+const Hero = () => {
+    
+    const { site } = useStaticQuery(
+        graphql`
+            query {
+                site {
+                    siteMetadata {
+                        image
+                    }
+                }
+            }
+        `
+    )
     return (
         <div className={styles.container}>
             <div className={styles.content}>
@@ -17,7 +29,7 @@ function Hero() {
                 </p>
             </div>
             <div className={styles.avatarContainer}>
-                <img alt='avatar' src='https://source.unsplash.com/random/300x300' />
+                <img alt='avatar' src={site.siteMetadata.image[1]} />
             </div>
         </div>           
     )

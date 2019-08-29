@@ -3,17 +3,25 @@ import Header from '../SectionHeader/sectionHeader'
 
 import styles from './projects.module.scss'
 import ProjectCard from './ProjectCard'
+import useProjectData from '../../hooks/useProjectData'
 
-let techList = ['tech1', 'tech2', 'tech3']
-export default () => (
-    <React.Fragment>
-      <Header> Projects </Header>
-      <div className={styles.container}>
-        <ProjectCard 
-          title='Title of project' 
-          description='Description of project'
-          techList={techList}
-          gitLink='/'/>   
-      </div>
-    </React.Fragment> 
-)
+export default () => {
+    const edges = useProjectData().allContentfulProject.edges;
+    const data = edges.map(res => res.node);
+    return (
+      <React.Fragment>
+        <Header> Projects </Header>
+        <div className={styles.container}>
+        { data.map(project => 
+            <ProjectCard 
+              title={project.name}
+              description={project.description.description}
+              techList={project.technologies}
+              gitLink={project.github}
+              webLink={project.webLink}
+            />) 
+          }
+        </div>
+      </React.Fragment>
+    )
+}

@@ -32,6 +32,7 @@
     font-family: 'Arvo', sans-serif;
     padding-bottom: 150px;
     display: flex;
+    justify-content: space-between;
 }
 
 .content {
@@ -42,7 +43,7 @@
 }
 
 .avatarContainer {
-    width: 40%;
+    width: 35%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -63,11 +64,20 @@
 
         .content,
         .avatarContainer {
-            width: 100%;
+            width: 80%;
         }
 
+        .content {
+            h5, h3 {
+                font-size: 1.2rem;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+        }
         .avatarContainer {
             justify-content: center;
+            margin-bottom: 20px;
         }
     }
 }

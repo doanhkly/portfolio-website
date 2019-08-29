@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Contact, Hero, Projects, Social } from '../components'
+import { Hero, Projects, Social } from '../components'
 import Layout from '../Layout/Layout'
 
 import styles from './index.module.scss'
@@ -14,9 +14,6 @@ export default () => (
             </section>
             <section id='projects'>   
                 <Projects />           
-            </section>
-            <section id='contact'>    
-                <Contact />          
             </section>
         </main>       
     </Layout>
