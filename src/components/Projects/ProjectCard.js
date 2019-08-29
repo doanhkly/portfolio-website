@@ -19,7 +19,7 @@ export default ({ title, description, techList, gitLink, webLink }) => {
                 <p>{description}</p>
             </main>
             <footer>
-                { techList.length !== 0 ? (
+                { techList ? (
                     <ul className={styles.list}>
                         {techList.map( (name, index) => <li key={index}>{name}</li>)}
                     </ul>
