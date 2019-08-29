@@ -8,7 +8,7 @@ export default () => (
     <Header>
       Contact Me
     </Header>
-    <form name='contact' method="POST" data-netlify='true' className={styles.form}>
+    <form name='contact' method="POST" data-netlify='true' data-netlify-honeypot="bot-field" className={styles.form}>
       <input type="hidden" name="form-name" value="Contact Form" />
       <p className={styles.formIdentity}>
         <input type="text" name="name" placeholder='Name' style={{fontSize: '24px'}}/>      
