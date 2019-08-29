@@ -4,7 +4,7 @@ const useProjectData = () => {
     return useStaticQuery(
         graphql`
           {
-            allContentfulProject {
+            allContentfulProject(sort: {fields: id}) {
                 edges {
                   node {
                     description {

@@ -10,10 +10,9 @@ export default ({ title, description, techList, gitLink, webLink }) => {
                 <div className={styles.icon}>
                     <div>  <FaLaptopCode /> </div>       
                     <div className={styles.external}>
-                        <a href={webLink}> { webLink ? (<FaExternalLinkAlt />) : null} </a>
                         <a href={gitLink}> { gitLink ? <FaGithub /> : null } </a>
-                    </div>
-                    
+                        <a href={webLink}> { webLink ? (<FaExternalLinkAlt />) : null} </a>                  
+                    </div>                  
                 </div>
                 <h1>{title}</h1>
                 <p>{description}</p>
@@ -27,5 +26,4 @@ export default ({ title, description, techList, gitLink, webLink }) => {
             </footer>
         </div>  
     )
-    
 }
