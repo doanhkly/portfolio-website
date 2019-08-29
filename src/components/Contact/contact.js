@@ -9,6 +9,7 @@ export default () => (
       Contact Me
     </Header>
     <form name='contact' method="POST" data-netlify='true' className={styles.form}>
+      <input type="hidden" name="form-name" value="Contact Form" />
       <p className={styles.formIdentity}>
         <input type="text" name="name" placeholder='Name' style={{fontSize: '24px'}}/>      
         <input type="email" name="email" placeholder='Email' style={{fontSize: '24px'}}/>       
