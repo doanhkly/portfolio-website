@@ -5,7 +5,9 @@
  */
 const dotenv = require('dotenv')
 
-if (process.env.NODE_ENV !== 'production' ? dotenv.config() : (null))
+if (process.env.NODE_ENV !== 'production')  {
+  dotenv.config() 
+}
 
 module.exports = {
   // siteMetadata
