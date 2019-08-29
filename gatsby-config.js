@@ -15,7 +15,8 @@ module.exports = {
   siteMetadata: {
     title: `Doanh Ly | Future Software Engineer`,
     siteUrl: `https://doanhkly.netlify.com`,
-    description: `My name is Doanh Ly. I am currently working on my Master's degree in Computer Science at Northeastern University.`,
+    description: `Just an individual fascinated by the possibilities and changes you can 
+        make with just a few lines of code. Also, it's fun!`,
     image: ['/images/profile-img-1.jpg','/images/profile-img-2.jpg'],
   },
 

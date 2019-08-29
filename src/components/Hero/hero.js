@@ -10,6 +10,7 @@ const Hero = () => {
                 site {
                     siteMetadata {
                         image
+                        description
                     }
                 }
             }
@@ -24,8 +25,7 @@ const Hero = () => {
                     Code &nbsp; | &nbsp; Eat &nbsp; | &nbsp; Sleep &nbsp; | &nbsp; Repeat
                 </h3>
                 <p className={styles.blurb}>
-                    A writer of code. I love to build things that live on the Worldwide Web. 
-                    I believe that programs can one day change the world for the better.
+                    { site.siteMetadata.description }
                 </p>
             </div>
             <div className={styles.avatarContainer}>
