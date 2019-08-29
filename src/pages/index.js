@@ -1,11 +1,12 @@
 import React from "react"
 
-import { Navbar, Contact, Hero, Footer, Projects, Social } from '../components'
+import { Contact, Hero, Projects, Social } from '../components'
+import Layout from '../Layout/Layout'
+
 import styles from './index.module.scss'
 
 export default () => (
-    <div className='container'>
-        <Navbar />
+    <Layout>
         <Social />
         <main className={styles.main}>
             <section>  
@@ -18,6 +19,5 @@ export default () => (
                 <Contact />          
             </section>
         </main>       
-        <Footer />
-    </div>
+    </Layout>
 )
