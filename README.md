@@ -1,4 +1,4 @@
-# My portfolio website
+# My Portfolio Website
 Designed and built to showcase projects that I'm working on or have completed, both personal and school-related
 
 ## Link
